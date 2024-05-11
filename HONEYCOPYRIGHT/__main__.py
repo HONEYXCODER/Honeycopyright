@@ -17,5 +17,5 @@ async def daxxpapa_boot():
     await COPYRIGHT2.send_message(LOGGER_ID, "**𝖨 𝖺𝗆 𝖺𝗅𝗂𝗏𝖾 𝖡𝖺𝖻𝗒 𝖸𝗈𝗎𝗋 𝖡𝗈𝗍 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅 𝖣𝖾𝗉𝗅𝗈𝗒")
 
 if __name__ == "__main__":
-    loop.run_until_complete(honeypapa_boot())
+    loop.run_until_complete(daxxpapa_boot())
     
