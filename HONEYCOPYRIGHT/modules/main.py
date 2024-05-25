@@ -31,16 +31,16 @@ Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ :- Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢ�
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝗦𝗨𝗠𝗠𝗢 𝗠𝗘 𝗜𝗡 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣", url=f"https://t.me/insanecopyright_bot?startgroup=true")
+          InlineKeyboardButton("𝗦𝗨𝗠𝗠𝗢𝗠𝗘 𝗜𝗡 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣", url=f"https://t.me/insanecopyright_bot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", callback_data="dil_back")
+          InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url="https://t.me/honey_networks"),
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://graph.org/file/c95b57e55b69abc2cf4e0.jpg",
+        photo="https://graph.org/file/d9f389885469288d75464.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
@@ -49,7 +49,7 @@ async def start(_, msg):
 gd_buttons = [              
         [
             InlineKeyboardButton("𝐎ᴡɴᴇʀ", user_id=OWNER_ID),
-            InlineKeyboardButton("𝐒ᴜᴘᴘᴏʀᴛ", url="https://t.me/insanesociety"),    
+            InlineKeyboardButton("𝐒ᴜᴘᴘᴏʀᴛ", url="https://t.me/honey_networks"),    
         ]
         ]
 
@@ -119,12 +119,12 @@ async def handle_message(client, message):
         logging.info(f"Deleting message with ID {message.id}")
         await message.delete()
       #  user_mention = from_user.mention
-        await message.reply_text(f"@{message.from_user.username} PLEASE DON'T SEND AGAIN!!")
+        await message.reply_text(f"@{message.from_user.username} LAUDE GROUP UDANA NAHI AATA TO KYA GAND MARA RAHA HAIN DONT SEND AGAIN!!")
     elif any(keyword in message.caption for keyword in FORBIDDEN_KEYWORDS):
         logging.info(f"Deleting message with ID {message.id}")
         await message.delete()
        # user_mention = from_user.mention
-        await message.reply_text(f"@{message.from_user.username} PLEASE DONT SEND AGAIN!!")
+        await message.reply_text(f"@{message.from_user.username} LAUDE GROUP UDANA NAHI AATA TO KYA GAND MARA RAHA HAIN DONT SEND AGAIN!!")
         
         
 # -------------------------------------------------------------------------------------
