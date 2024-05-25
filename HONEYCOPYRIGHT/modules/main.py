@@ -34,13 +34,16 @@ async def start(_, msg):
           InlineKeyboardButton("𝗦𝗨𝗠𝗠𝗢𝗠𝗘 𝗜𝗡 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣", url=f"https://t.me/insanecopyright_bot?startgroup=true")
         ],
         [
+          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/OgHoneyy"),
+        ],
+        [
           InlineKeyboardButton("𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url="https://t.me/honey_networks"),
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://graph.org/file/d9f389885469288d75464.jpg",
+        photo="https://graph.org/file/499891fb498986ca55797.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
