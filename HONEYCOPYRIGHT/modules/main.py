@@ -34,16 +34,17 @@ async def start(_, msg):
           InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/insanecopyright_bot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/OgHoneyy"),
+          InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/abot_honey"),
+          InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/honey_networks"),
         ],
         [
-          InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/honey_networks"),
+          InlineKeyboardButton("ᴍᴀɴᴀɢᴇᴍᴇɴᴛ + ᴍᴜsɪᴄ", url="https://t.me/Karumi_Probot"),
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://graph.org/file/5d0768139984dab95bfb0.jpg",
+        photo="https://graph.org/file/f78c98fd09f9fb804132b.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
@@ -122,12 +123,12 @@ async def handle_message(client, message):
         logging.info(f"Deleting message with ID {message.id}")
         await message.delete()
       #  user_mention = from_user.mention
-        await message.reply_text(f"@{message.from_user.username} LAUDE GROUP UDANA NAHI AATA TO KYA GAND MARA RAHA HAIN DONT SEND AGAIN!!")
+        await message.reply_text(f"𝙃𝙀𝙔 @{message.from_user.username} 𝙋𝙇𝙀𝘼𝙎𝙀 𝘿𝙊𝙉'𝙏 𝙎𝙀𝙉𝘿 𝘼𝙂𝘼𝙄𝙉!!")
     elif any(keyword in message.caption for keyword in FORBIDDEN_KEYWORDS):
         logging.info(f"Deleting message with ID {message.id}")
         await message.delete()
        # user_mention = from_user.mention
-        await message.reply_text(f"@{message.from_user.username} LAUDE GROUP UDANA NAHI AATA TO KYA GAND MARA RAHA HAIN DONT SEND AGAIN!!")
+        await message.reply_text(f"𝙃𝙀𝙔 @{message.from_user.username} 𝙋𝙇𝙀𝘼𝙎𝙀 𝘿𝙊𝙉'𝙏 𝙎𝙀𝙉𝘿 𝘼𝙂𝘼𝙄𝙉!!")
         
         
 # -------------------------------------------------------------------------------------
